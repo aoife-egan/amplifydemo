@@ -4,6 +4,11 @@ import * as Font from 'expo-font';
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import Amplify from 'aws-amplify';
+import amplify from './aws-exports'; //awsconfig
+
+
+Amplify.configure(amplify);
 
 import AppNavigator from './navigation/AppNavigator';
 
